@@ -165,17 +165,6 @@ as expected:
 
 ICMPv4 does NOT work between qemu nodes, so ping (v4) will not work as expected. Everything else (including ICMPv6 i.e. ping6) does work as expected, however.
 
-### How to start and stop the image
-
-You will need a rootfs and ramfs LibreMesh files. To generate one you can use a libremesh buildroot
-and select x86_64 target and select the option to generate an initramfs.
-
-Prebuilt development images can be downloaded from here:
-* http://repo.libremesh.org/tmp/openwrt-18.06-x86-64-generic-rootfs.tar.gz
-* http://repo.libremesh.org/tmp/openwrt-18.06-x86-64-ramfs.bzImage
-
-Install the package `qemu-system-x86_64` if you don't have already installed.
-
 ### Build a mesh network
 
 Up to 100 qemu nodes can be setup. Use the `--node-id N`. All the node's LAN interfaces are
